@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    
+    font-family: 'Raleway', sans-serif !important;
+}
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+   
+}
+.vh100{
+  height: 100vh;
+
+}
+.title{
+  padding: 0.5em;
+	margin-bottom: 0.5em;
+}
+.grad45{
+    background: linear-gradient(rgb(83, 0, 96) 45%, rgb(231, 10, 139));
+}
+/*Estilos de vista inicial*/
+.bgi{
+  /* Ubicación de la imagen */
+  background-image: url(../assets/images/start.jpg);
+  /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+  background-position: center center;
+  /* Para que la imagen de fondo no se repita */
+  background-repeat: no-repeat;
+  /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+  background-attachment: fixed;
+  /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+  background-size: cover;
+  /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+ 
+}
+.display-inblo{
+  display: inline-block;
+}
+.button-groups{
+  margin-top: 95px;
+  text-align: center;
+}
+.button-style{
+  background-color: transparent!important;
+  padding: 15px 30px 15px 30px;
+  color:#fff;
+  font-weight: bold;
+  
+}
+.row-style{
+  text-align: center;
+  
+}
+.img-logo{
+
+ max-width: 15vh;
+ margin-top: 1em;
+ 
+}
+main{
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.central{
+  margin-top: 15rem;
+} 
+/*Estilos para la vista sing up*/
+.btn-next{
+  background-color: #DFDFDF;
+}
+.button-link{
+  padding-top: 2rem;
+
+}
+.select{
+  height: 35px;
+  border-radius: 5%;
+  border: 1px solid gray;
+}
+/*Estilos para la vista verify*/
+.p-100{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.grad-btn{
+  /* background-color: linear-gradient(rgb(203, 36, 103) 45%, rgb(83, 0, 96))!important; */
+  background-color:#FF00BF;
+  color: #fff;
+}
+.footer-button{
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  height: 35px;
+  text-align: center;
+  color: #CCC;
+}
+.btn-circle{
+  border-radius: 50%;
+}
+.btn-reset{
+  background-color: #DFDFDF;
+  font-weight: bold;
+  font-size: 1em;
+}
+/*Estilos vista Sign up*/
+strong{
+  color:#6DA0CB;
+}
+/*Estilos para vista signup*/
+.msj-error{
+  padding: 6px 12px;
+  background-color: #BC1010;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 16px;
+  margin-top: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.msj-error:before{
+  content:'';
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #BC1010;
+  border-left: 8px solid transparent;
+  left:-16px;
+  position:absolute;
+  top:0;
+}
+/*Estilos vista registro satisfactorio*/
+.p-50{
+  padding-left: 50px;
+  padding-right: 50px;
+}
