@@ -1,24 +1,30 @@
 $(document).ready(function() {
   // Declarando variables para seleccionar elementos del DOM
-  var $flagSelect = $('#flags');
+  var $flagSelect = $('li');
   var $phone = $('#inputPhone');
   var $next = $('#button-next');
-
-  // Controlador de evento del elemento select
-  $flagSelect.on('change', function(event) {
-    // Variable que almacenara el valor del item seleccionado
-    var $valueSelect = $(this).val();
+  
+  // Controlador de evento del elemento li
+  $flagSelect.on('click', function() {
+    // Variable que almacenara el valor del atributo data-code
+    var $valueSelect = $(this).data('code');
+    console.log($valueSelect);
     // Evalua si la condicion es cierta se ingresará el codigo Postal de acuerdo al pais
     if ($valueSelect === 'PER') {
+      $('<img src="../assets/images/flags/per.png" class="img-country">').replaceAll($('#dropdownMenu1 :first-child'));
       $phone.val('51');
     } else if ($valueSelect === 'MEX') {
+      $('<img src="../assets/images/flags/mex.png" class="img-country">').replaceAll($('#dropdownMenu1 :first-child'));
       $phone.val('52');
-    } else if ($valueSelect === 'EU') {
+    } else if ($valueSelect === 'US') {
+      $('<img src="../assets/images/flags/us.png" class="img-country">').replaceAll($('#dropdownMenu1 :first-child'));
       $phone.val('53');
     } else if ($valueSelect === 'BRA') {
+      $('<img src="../assets/images/flags/brazil.png" class="img-country">').replaceAll($('#dropdownMenu1 :first-child'));
       $phone.val('50');
     }
   });
+
   // Controlador de evento del elemento input:phone
   $phone.on('input', function(event) {
     var $valueInput = $(this).val();
@@ -28,11 +34,10 @@ $(document).ready(function() {
     } */
     // Evalua si la longitud del input es igual a 12 (10 digitos del telefóno + 2 codigo postal)
     if ($valueInput.length === 12) {
-      //Habilita boton
+      // Habilita boton
       enabledButton();
-    }
-    else {
-      //Deshabilita boton
+    } else {
+      // Deshabilita boton
       disabledButton();
     } 
   });
@@ -43,7 +48,7 @@ $(document).ready(function() {
     // Declara variable que almacena el código aleatorio
     var code = codeGenerator();
     // Mensaje que contiene el código generado
-    alert('LAB-'+ code);
+    alert('LAB-' + code);
     // Almacena los datos del código y valor del input
     localStorage.keyphone = code;
     localStorage.number = $phone.val();

@@ -80,10 +80,12 @@ main{
   padding-top: 2rem;
 
 }
-.select{
-  height: 35px;
-  border-radius: 5%;
-  border: 1px solid gray;
+.img-country{
+  width:30px;
+  height: 30px;
+}
+.list-country{
+  min-width: 80px;
 }
 /*Estilos para la vista verify*/
 .p-100{
@@ -116,7 +118,6 @@ main{
 strong{
   color:#6DA0CB;
 }
-/*Estilos para vista signup*/
 .msj-error{
   padding: 6px 12px;
   background-color: #BC1010;
