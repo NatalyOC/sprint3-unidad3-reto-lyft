@@ -28,10 +28,6 @@ $(document).ready(function() {
   // Controlador de evento del elemento input:phone
   $phone.on('input', function(event) {
     var $valueInput = $(this).val();
-    /*  if (isNaN($valueInput)) {
-      alert('El teléfono solo debe contener números'); 
-      $(this).val('');
-    } */
     // Evalua si la longitud del input es igual a 12 (10 digitos del telefóno + 2 codigo postal)
     if ($valueInput.length === 12) {
       // Habilita boton
@@ -48,7 +44,7 @@ $(document).ready(function() {
     // Declara variable que almacena el código aleatorio
     var code = codeGenerator();
     // Mensaje que contiene el código generado
-    alert('LAB-' + code);
+    alert('Tu código es: LAB-' + code);
     // Almacena los datos del código y valor del input
     localStorage.keyphone = code;
     localStorage.number = $phone.val();

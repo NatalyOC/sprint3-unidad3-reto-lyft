@@ -31,4 +31,4 @@ Ya que se ha realizado lo anterior, sólo se deberá mostrar una vista al usuari
 * CSS3
 * HTML5
 
-![imagen panda](assets/images/web.jpg)
+![imagen panda](assets/images/lyft.jpg)
